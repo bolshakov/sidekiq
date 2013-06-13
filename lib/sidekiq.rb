@@ -9,6 +9,8 @@ require 'sidekiq/api'
 
 require 'json'
 
+require "sidekiq/railtie" if defined?(Rails)
+
 module Sidekiq
   NAME = "Sidekiq"
   LICENSE = 'See LICENSE and the LGPL-3.0 for licensing details.'
